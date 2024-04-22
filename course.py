@@ -49,7 +49,8 @@ class Course:
     def create_an_assignment(self, due_date):
         new_assignment_id = self.generate_assignment_id()
         new_assignment = Assignment(new_assignment_id, 
-                                    due_date, self.course_id)
+                                    due_date, 
+                                    self.course_id)
         self.assignment_list.append(new_assignment)
     
     def generate_assignment_id(self):

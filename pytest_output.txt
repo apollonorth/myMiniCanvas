@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.1.1, pluggy-1.5.0
+rootdir: /home/ubuntu/myMiniCanvas
+plugins: anyio-4.3.0, cov-5.0.0, mock-3.14.0
+collected 19 items
+
+test_assignment.py ..                                                    [ 10%]
+test_course.py ......                                                    [ 42%]
+test_main.py .....                                                       [ 68%]
+test_user.py ......                                                      [100%]
+
+---------- coverage: platform linux, python 3.10.12-final-0 ----------
+Name                 Stmts   Miss  Cover
+----------------------------------------
+assignment.py           13      0   100%
+course.py               43      2    95%
+main.py                 36      2    94%
+test_assignment.py      22      0   100%
+test_course.py          60      0   100%
+test_main.py            53      0   100%
+test_user.py            46      1    98%
+user.py                 27      1    96%
+----------------------------------------
+TOTAL                  300      6    98%
+
+
+============================== 19 passed in 1.28s ==============================

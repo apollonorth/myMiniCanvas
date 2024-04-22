@@ -1,0 +1,26 @@
+name: testing mini canvas
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+
+      - name: python set up
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.8'
+
+      - name: install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest pytest-cov 
+
+      - name: run the tests
+        run: |
+          pytest --cov
